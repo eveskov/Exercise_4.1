@@ -1,0 +1,14 @@
+table {border-collapse:collapse;border:1px solid #9fabb2; width:300px;height:500px;border-spacing:0;padding:0;}
+
+tr, td {border:1px solid #9fabb2}
+
+.leftColumn {width:100px;text-align:right;border-width:1px;font-family:Arial,sans-serif;font-weight:bold;font-size:15px;padding-right:10px;}
+
+#buttons {text-align:center;background:#d1ede1;}
+
+textarea {
+	border-color: #919191;
+	border-style: solid;
+	border-width: thin;
+}
+

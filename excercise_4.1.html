@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Last Name</title>
+	<meta charset="UTF-8">
+	<link type="text/css" href="styles/style_4.1.css" rel="stylesheet">
+</head>
+<body>
+    <table class="mainTable">
+        <tr>
+            <td class="leftColumn">Last Name</td>
+            <td>
+                <form>
+                    <input type="text" name="LastName" size="45" />
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="leftColumn">First Name</td>
+            <td>
+                <form>
+                    <input type="text" name="FirsttName" size="45" />
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="leftColumn">Address</td>
+            <td>
+				<form>
+					<textarea name="Address" cols="35" rows="4"></textarea>
+				</form>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="leftColumn">City</td>
+            <td>
+				<form>
+					<input type="text" name="City" size="33" />State
+					<input type="text" name="State" size="3"/>
+				</form>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="leftColumn">Zip/Postal Code</td>
+            <td>
+				<form>
+					<input type="text" name="Zip" pattern="[0-9]{4}" />
+				</form>
+			</td>
+        </tr>
+
+        <tr>
+            <td class="leftColumn">Country</td>
+            <td>
+				<select name="Contry">
+						<option value="Bulgaria" selected="selected">Bulgaria</option>
+						<option value="Brazil">Brazil</option>
+						<option value="Bolivia">Bolivia</option>
+						<option value="Canada">Canada</option>
+						<option value="Germany">Germany</option>
+				</select>
+			</td>
+        </tr>
+
+        <tr>
+            <td class="leftColumn">Phone (country code, area code, number</td>
+            <td>
+				<form>
+					(+<input type="text" name="countryCode" size="6" pattern="[0-9]{3}" />)
+					<input type="text" name="areaCode" size="6" pattern="[0-9]{2}" />-
+					<input type="text" name="number" size="18" pattern="[0-9]{7}" />
+				</form>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="leftColumn">E-mail</td>
+            <td>
+				<form>
+					<input type="text" name="email" size="48"/>
+				</form>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="leftColumn">Birth date</td>
+            <td>
+				<form>
+					Month<input type="text" name="month" size="2" pattern="[1-12]{2}" />
+					Day<input type="text" name="day" size="2" pattern="[1-31]{2}" />
+					Year (4 digit)<input type="text" name="year" size="6" pattern="[0-9]{4}" />
+				</form>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="leftColumn">Gender</td>
+            <td>
+				<form>
+					<select name="Gender">
+						<option value="Male" selected="selected">Male</option>
+						<option value="Female">Female</option>
+					</select>
+				</form>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="leftColumn">Starting date</td>
+            <td>
+                <form>
+                    <input type="radio" name="spring-summer" id="spring" value="spring2006" checked/>
+                    <label for="spring">Spring 2006</label>
+
+                    <input type="radio" name="spring-summer" id="summer" value="summer2006" />
+                    <label for="summer">Summer 2006</label>
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="leftColumn">Comments/Questions</td>
+            <td>
+				<form>
+					<textarea name="Comments" cols="35" rows="5" placeholder="Please send me more information about the lodging"></textarea>
+				</form>
+			</td>
+        </tr>
+
+        <tr>
+            <td colspan="2" id="buttons">
+				<form>
+					<input type="submit" name="Submit" value="Submit" />
+					<input type="reset" name="ClearForm" value="Clear This Form" />
+				</form>
+            </td>
+        </tr>
+	</table>
+</body>
+</html>
